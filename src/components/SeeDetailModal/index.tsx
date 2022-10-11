@@ -118,7 +118,7 @@ const SeeDetailModal: React.FC<ModalProps> = ({
 								</List>
 							</ContainerColumn>
 							<Column style={{ height: "13rem" }}>
-								<TitleLabel>Estatística</TitleLabel>
+								<TitleLabel>Estatísticas</TitleLabel>
 								<Row>
 									<Column
 										style={{

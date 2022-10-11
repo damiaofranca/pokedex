@@ -63,7 +63,7 @@ export const SeeMore = styled.button`
 	font-weight: 700;
 	font-size: 1.1rem;
 	border-radius: 0.17rem;
-	background-color: #ffd661;
+	background-color: #f2c953;
 	font-family: "Poppins", sans-serif;
 	color: ${(props) => props.theme.secondary};
 	&:hover {
