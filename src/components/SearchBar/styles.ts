@@ -13,7 +13,7 @@ export const Search = styled.input`
 	padding: 0.3rem 0.6rem;
 	transition: all 0.2s ease;
 	background-color: transparent;
-	font-family: "Lobster", cursive;
+	font-family: "Poppins", sans-serif;
 	border-bottom: 1px solid #d7d7d7;
 	color: ${(props) => props.theme.inverse};
 	&:focus {

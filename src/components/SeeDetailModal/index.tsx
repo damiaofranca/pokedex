@@ -108,7 +108,7 @@ const SeeDetailModal: React.FC<ModalProps> = ({
 								</Specify>
 							</ContainerRow>
 							<ContainerColumn>
-								<TitleLabel>Abilidades</TitleLabel>
+								<TitleLabel>Habilidades</TitleLabel>
 								<List>
 									{data.abilities.map((abilitie) => (
 										<Item key={abilitie.ability.name}>

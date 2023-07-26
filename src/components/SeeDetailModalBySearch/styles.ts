@@ -119,7 +119,7 @@ export const Header = styled.div`
 	display: flex;
 	font-size: 1.6rem;
 	align-items: center;
-	font-family: "Lobster", cursive;
+	font-family: "Poppins", sans-serif;
 	margin-bottom: 1.5rem;
 	justify-content: space-between;
 
@@ -150,7 +150,7 @@ export const TitleMobile = styled.h3`
 	color: #ffffff;
 	font-size: 1.6rem;
 	text-align: center;
-	font-family: "Lobster", cursive;
+	font-family: "Poppins", sans-serif;
 `;
 
 export const ContainerImg = styled.div`
@@ -189,7 +189,7 @@ export const Item = styled.div`
 	border-radius: 0.04rem;
 	box-sizing: border-box;
 	font-family: sans-serif;
-	font-family: "Lobster", cursive;
+	font-family: "Poppins", sans-serif;
 	background-color: ${(props) => props.theme.primary};
 
 	&:first-child {

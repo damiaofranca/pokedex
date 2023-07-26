@@ -91,7 +91,7 @@ const SeeDetailModalBySearch: React.FC<ModalProps> = ({
 								</Specify>
 							</ContainerRow>
 							<ContainerColumn>
-								<TitleLabel>Abilidades</TitleLabel>
+								<TitleLabel>Habilidades</TitleLabel>
 								<List>
 									{data.abilities
 										? data.abilities.map((abilitie) => (
