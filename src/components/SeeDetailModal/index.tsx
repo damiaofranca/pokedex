@@ -35,8 +35,8 @@ interface ModalProps {
 
 const SeeDetailModal: React.FC<ModalProps> = ({
 	onClose,
-	isVisible,
 	pokemon,
+	isVisible,
 }) => {
 	const [data, setData] = useState<Pokedex | null>(null);
 	const fetchPokemonDetails = async (url: string) => {
@@ -55,7 +55,7 @@ const SeeDetailModal: React.FC<ModalProps> = ({
 			fetchPokemonDetails(
 				typeof pokemon.url === "string"
 					? pokemon.url
-					: `https://pokeapi.co/api/v2/pokemon/${pokemon.url}/`
+					: `https://pokeapi.co/api/v2/pokemon/${pokemon.url}/`,
 			);
 			document.body.classList.add("no-scroll");
 		} else {
@@ -97,13 +97,13 @@ const SeeDetailModal: React.FC<ModalProps> = ({
 								<Specify>
 									<TitleLabel>Peso</TitleLabel>
 									<SpecifyValue>{`${dividerNumber(
-										data.weight
+										data.weight,
 									)}Kg`}</SpecifyValue>
 								</Specify>
 								<Specify>
 									<TitleLabel>Altura</TitleLabel>
 									<SpecifyValue>{`${dividerNumber(
-										data.height
+										data.height,
 									)}Kg`}</SpecifyValue>
 								</Specify>
 							</ContainerRow>
@@ -129,7 +129,6 @@ const SeeDetailModal: React.FC<ModalProps> = ({
 									>
 										<Stats>
 											<ColValue
-												color="#3ffd2e"
 												title={`${data.stats[0].base_stat}%`}
 												value={data.stats[0].base_stat}
 											/>
@@ -145,7 +144,6 @@ const SeeDetailModal: React.FC<ModalProps> = ({
 									>
 										<Stats>
 											<ColValue
-												color="#ff4e2f"
 												title={`${data.stats[1].base_stat}%`}
 												value={data.stats[1].base_stat}
 											/>
@@ -161,7 +159,6 @@ const SeeDetailModal: React.FC<ModalProps> = ({
 									>
 										<Stats>
 											<ColValue
-												color="#2f39ff"
 												title={`${data.stats[2].base_stat}%`}
 												value={data.stats[2].base_stat}
 											/>
@@ -177,7 +174,6 @@ const SeeDetailModal: React.FC<ModalProps> = ({
 									>
 										<Stats>
 											<ColValue
-												color="#ff932d"
 												title={`${data.stats[5].base_stat}%`}
 												value={data.stats[5].base_stat}
 											/>

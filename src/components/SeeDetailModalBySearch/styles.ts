@@ -35,7 +35,7 @@ export const Box = styled.div`
 	margin-top: 10rem;
 	height: fit-content;
 	flex-direction: row;
-	border-radius: 0.2rem;
+	border-radius: 0.4rem;
 	box-sizing: border-box;
 	@keyframes smoothBoxEffect {
 		from {
@@ -92,8 +92,8 @@ export const LeftSide = styled.div`
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	border-top-left-radius: 0.2rem;
-	border-bottom-left-radius: 0.2rem;
+	border-top-left-radius: 0.4rem;
+	border-bottom-left-radius: 0.4rem;
 	background-color: ${(props) => props.theme.primary};
 
 	@media screen and (min-width: 1200px) and (max-width: 1450px) {
@@ -111,8 +111,8 @@ export const RightSide = styled.div`
 	padding: 1.5rem 2rem;
 	box-sizing: border-box;
 	background-color: #ffffff;
-	border-top-right-radius: 0.2rem;
-	border-bottom-right-radius: 0.2rem;
+	border-top-right-radius: 0.4rem;
+	border-bottom-right-radius: 0.4rem;
 `;
 
 export const Header = styled.div`

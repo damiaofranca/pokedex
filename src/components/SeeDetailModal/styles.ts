@@ -36,7 +36,7 @@ export const Box = styled.div`
 	margin-top: 10rem;
 	height: fit-content;
 	flex-direction: row;
-	border-radius: 0.2rem;
+	border-radius: 0.4rem;
 	box-sizing: border-box;
 	@keyframes smoothBoxEffect {
 		from {
@@ -93,9 +93,10 @@ export const LeftSide = styled.div`
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	border-top-left-radius: 0.2rem;
-	border-bottom-left-radius: 0.2rem;
+	border-top-left-radius: 0.4rem;
+	border-bottom-left-radius: 0.4rem;
 	background-color: ${(props) => props.theme.primary};
+	border-right: 1px solid ${(props) => props.theme.border};
 
 	@media screen and (min-width: 1200px) and (max-width: 1450px) {
 		max-width: 40%;
@@ -112,8 +113,8 @@ export const RightSide = styled.div`
 	padding: 1.5rem 2rem;
 	box-sizing: border-box;
 	background-color: #ffffff;
-	border-top-right-radius: 0.2rem;
-	border-bottom-right-radius: 0.2rem;
+	border-top-right-radius: 0.4rem;
+	border-bottom-right-radius: 0.4rem;
 `;
 
 export const Header = styled.div`
@@ -180,16 +181,17 @@ export const List = styled.div`
 
 export const Item = styled.div`
 	color: #fff;
+	padding: 0 8px;
 	min-width: 6rem;
 	font-weight: 500;
-	margin: 0 0.5rem 1rem 0;
 	font-size: 0.9rem;
 	text-align: center;
 	line-height: 1.8rem;
+	border-radius: 0.2rem;
 	letter-spacing: 0.1rem;
-	border-radius: 0.04rem;
 	box-sizing: border-box;
 	font-family: sans-serif;
+	margin: 0 0.5rem 1rem 0;
 	font-family: "Poppins", sans-serif;
 	background-color: ${(props) => props.theme.primary};
 
@@ -266,11 +268,10 @@ export const Row = styled.div`
 	align-items: flex-end;
 `;
 
-export const ColValue = styled.div<{ value: number; color: string }>`
+export const ColValue = styled.div<{ value: number }>`
 	width: 2.4rem;
 	max-height: 10rem;
 	border-radius: 3px;
-	background-color: ${(props) => props.color};
-	box-shadow: 0px 0px 4px ${(props) => props.color};
+	background-color: ${(props) => props.theme.header.bg};
 	height: ${(props) => `${(props.value * 10) / 100}rem`};
 `;

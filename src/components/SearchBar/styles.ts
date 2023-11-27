@@ -14,13 +14,14 @@ export const Search = styled.input`
 	transition: all 0.2s ease;
 	background-color: transparent;
 	font-family: "Poppins", sans-serif;
-	border-bottom: 1px solid #d7d7d7;
 	color: ${(props) => props.theme.inverse};
+	border-bottom: 1px solid ${(props) => props.theme.border};
 	&:focus {
 		outline: none;
 		border-bottom: 1px solid ${(props) => props.theme.inverse};
-	}
-	&::placeholder {
-		color: #d7d7d7;
+
+		&::placeholder {
+			color: ${(props) => props.theme.inverse};
+		}
 	}
 `;

@@ -26,12 +26,12 @@ export const Card = styled.div`
 	width: 56%;
 	display: flex;
 	align-items: center;
-	border-radius: 0.2rem;
+	border-radius: 0.4rem;
 	flex-direction: column;
 	box-sizing: border-box;
 	padding: 1rem 0 2rem 0;
+	border: 1px solid ${(props) => props.theme.border};
 	background-color: ${(props) => props.theme.primary};
-	box-shadow: 1px 1px 4px ${(props) => props.theme.header.shadow};
 
 	@media screen and (min-width: 1101px) and (max-width: 1450px) {
 		width: 70%;
@@ -59,14 +59,14 @@ export const SeeMore = styled.button`
 	width: 88%;
 	height: 3rem;
 	border: none;
+	color: #ebf2fa;
 	cursor: pointer;
 	font-weight: 700;
 	font-size: 1.1rem;
 	border-radius: 0.17rem;
-	background-color: #f2c953;
+	background-color: #ffb301;
 	font-family: "Poppins", sans-serif;
-	color: ${(props) => props.theme.secondary};
 	&:hover {
-		background-color: #ffcc3a;
+		background-color: #efa800;
 	}
 `;

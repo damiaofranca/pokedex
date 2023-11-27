@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Path = styled.path`
-	fill: ${(props) => props.theme.inverse};
+	fill: #2e2e2e;
 `;
 
 interface CloseProps {
